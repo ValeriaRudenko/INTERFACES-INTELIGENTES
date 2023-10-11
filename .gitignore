@@ -18,6 +18,15 @@
 /practise2/[Ll]ogs/
 /practise2/[Uu]ser[Ss]ettings/
 
+/practise3/[Ll]ibrary/
+/practise3/[Tt]emp/
+/practise3/[Oo]bj/
+/practise3/[Bb]uild/
+/practise3/[Bb]uilds/
+/practise3/[Ll]ogs/
+/practise3/[Uu]ser[Ss]ettings/
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

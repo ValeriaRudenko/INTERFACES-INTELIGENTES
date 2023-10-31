@@ -33,6 +33,16 @@
 /practise4/[Bb]uilds/
 /practise4/[Ll]ogs/
 /practise4/[Uu]ser[Ss]ettings/
+
+/exercise-24.10/Ejercicio VR Martes/[Ll]ibrary/
+/exercise-24.10/Ejercicio VR Martes/[Tt]emp/
+/exercise-24.10/Ejercicio VR Martes/[Oo]bj/
+/exercise-24.10/Ejercicio VR Martes/[Bb]uild/
+/exercise-24.10/Ejercicio VR Martes/[Bb]uilds/
+/exercise-24.10/Ejercicio VR Martes/[Ll]ogs/
+/exercise-24.10/Ejercicio VR Martes/[Uu]ser[Ss]ettings/
+find /exercise-24.10/Ejercicio\ VR\ Martes/ -type f ! -name "*.zip"
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

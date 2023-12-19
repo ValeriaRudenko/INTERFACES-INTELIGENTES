@@ -1,13 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections; // Add this line
 
-public class Event : MonoBehaviour
+public class RotateObject : MonoBehaviour
 {
-    public void PlayAnimation(){
+    public void RotateAroundThreeTimes()
+    {
+        StartCoroutine(RotateSmoothly(5, 360f, 1f));
+    }
 
-        Debug.Log("Animation");
-        GetComponent<Animation>()["run"].wrapMode = WrapMode.Once;
-        GetComponent<Animation>().Play("run");
+    private IEnumerator RotateSmoothly(int numberOfRotations, float totalRotationAngle, float duration)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float currentRotationAngle = Mathf.Lerp(0, totalRotationAngle, elapsed / duration);
+            transform.rotation = Quaternion.Euler(0, currentRotationAngle, 0);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Ensure the final rotation is set correctly
+        transform.rotation = Quaternion.Euler(0, totalRotationAngle, 0);
     }
 }

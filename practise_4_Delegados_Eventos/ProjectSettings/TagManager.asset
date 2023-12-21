@@ -10,6 +10,7 @@ TagManager:
   - cube
   - cylinder
   - sphere
+  - plane
   layers:
   - Default
   - TransparentFX

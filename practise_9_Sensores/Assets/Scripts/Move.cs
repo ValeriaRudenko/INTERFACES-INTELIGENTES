@@ -5,7 +5,7 @@ public class Move : MonoBehaviour
     float orientation = 0.0f;
     float longitude = 0.0f;
     float latitude = 0.0f;
-    float velocity = 30.0f;
+    float velocity = 3.0f;
     float[] latitudesLimits = { -20.0f, -10.0f };
     float[] longitudesLimits = { 25.0f, 35.0f };
     Vector2 actualPosition = new Vector2(0.0f, 0.0f);
